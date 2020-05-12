@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header {
+    background: darkslategray;
+    color: darkgrey;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.first-fs {
+    border-top: 7px double darkslategray;
+}
+
+body {
+    background: whitesmoke;
+    display: block;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+:placeholder-shown {
+    text-align: right;
+    padding-right: 10px;
+    font-style: italic;
+    font-size: small;
+}
+
+textarea:placeholder-shown {
+    text-align: left;
+}
+
+.first-list {
+    padding-left: 0;
+}
+
+.second-list {
+    padding-left: 0;
+}
+
+.third-list {
+    padding-left: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: larger;
+    padding-top: 20px;
+}
+
+h3 {
+    font-size: larger;
+}
+
+p {
+    text-align: center;
+    color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+fieldset {
+    border: none;
+    border-top: 1.2px solid darkgrey;
+    padding-top: 20px;
+}
+
+.newsletters {
+    margin: 5px 2px 0;
+    border-top: 3px solid darkslategray;
+    padding: 20px 12px 10px;
+}
+
+.format {
+    margin: 0 2px 0;
+    border-top: 1.188px;
+    padding: 8px 12px 10px;
+}
+
+label {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+label b {
+    font-size: larger;
+    padding-bottom: 10px;
+}
+
+button {
+    background: darkturquoise;
+    color: white;
+    padding: 20px 20px;
+    margin-left: 11px;
+    margin-top: 10px;
+    width: 95%;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="radio"] {
+    margin: 15px 5px 10px;
+}
+
+input[type="checkbox"] {
+    margin: 15px 5px 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background: lightgray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[name="user_zip"] {
+    width: 50%;
+}
+
+option {
+    background: whitesmoke;
+}
+
+.txt-a {
+    margin-left: 12px;
+}
+
+textarea {
+    overflow: auto;
+    background: lightgray;
+    width: 94%;
+    height: 100px;
+    margin-left: 14px;
+    margin-top: 13px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+    color: grey;
+    padding-top: 15px;
+    padding-bottom: 150px;
+}
+
+.interests {
+    border: none;
+}
+
+/*  Media Queries  */
+
+@media (min-width: 768px) {
+    
+    form {
+        margin-left: 135px;
+        margin-right: 135px;
+    }
+
+    select {
+        width: 70%;
+        background-color: lightgray;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    input[type="text"] {
+        width: 70%;
+    }
+
+    input[type="email"] {
+        width: 70%;
+    }
+
+    input[name="user_zip"] {
+        width: 30%;
+    }
+
+}

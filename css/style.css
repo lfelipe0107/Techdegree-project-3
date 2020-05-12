@@ -68,6 +68,13 @@ p {
     padding-bottom: 20px;
 }
 
+legend {
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: larger;
+}
+
 fieldset {
     border: none;
     border-top: 1.2px solid darkgrey;
@@ -83,7 +90,7 @@ fieldset {
 .format {
     margin: 0 2px 0;
     border-top: 1.188px;
-    padding: 8px 12px 10px;
+    padding: 15px 12px 15px;
 }
 
 label {
@@ -91,9 +98,14 @@ label {
     margin-top: 10px;
 }
 
+label[for="name"] {
+    float: left;
+}
+
 label b {
     font-size: larger;
     padding-bottom: 10px;
+    padding-top: 15px;
 }
 
 button {
@@ -109,15 +121,19 @@ button {
 
 input[type="radio"] {
     margin: 15px 5px 10px;
+    display: inline-block;
 }
 
 input[type="checkbox"] {
     margin: 15px 5px 10px;
 }
 
-ul {
-    display: flex;
-    flex-direction: column;
+.group input,
+.group label {
+   display: block;
+   width: 100%;
+   padding-top: 20px;
+   margin-top: 10px;
 }
 
 input {
@@ -176,7 +192,7 @@ footer {
     }
 
     select {
-        width: 70%;
+        width: 100%;
         background-color: lightgray;
         margin-top: 5px;
         margin-bottom: 5px;
@@ -186,16 +202,13 @@ footer {
         border-radius: 5px;
     }
 
-    input[type="text"] {
-        width: 70%;
-    }
-
-    input[type="email"] {
-        width: 70%;
+    .group input,
+    .group label {
+        display: inline-block;
     }
 
     input[name="user_zip"] {
-        width: 30%;
+        width: 50%;
     }
 
 }

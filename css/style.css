@@ -54,8 +54,15 @@ h2 {
     padding-top: 20px;
 }
 
-h3 {
-    font-size: larger;
+.content {
+    text-align: left;
+    color: black;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 10px;
 }
 
 p {
@@ -69,22 +76,31 @@ p {
 }
 
 legend {
-    float: left;
+    margin-top: 15px;
+    font-size: larger;
+}
+
+legend b {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: absolute;
     padding-top: 15px;
     padding-bottom: 15px;
-    font-size: larger;
+}
+
+.newsletter {
+    border-top: 3px solid darkslategray;
+}
+
+.second {
+    position: absolute;
+    padding-bottom: 15px;
+    margin-top: 0;
 }
 
 fieldset {
     border: none;
-    border-top: 1.2px solid darkgrey;
     padding-top: 20px;
-}
-
-.newsletters {
-    margin: 5px 2px 0;
-    border-top: 3px solid darkslategray;
-    padding: 20px 12px 10px;
 }
 
 .format {
@@ -194,20 +210,31 @@ footer {
     select {
         width: 100%;
         background-color: lightgray;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 17px 15px;
         border: none;
         border-radius: 5px;
     }
 
-    .group input,
-    .group label {
-        display: inline-block;
+    input[name="user_zip"] {
+        width: 50%;
     }
 
-    input[name="user_zip"] {
+    div {
+        display: flex;
+    }
+
+    input {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .first-fs input {
+        width: 100%;
+    }
+
+    #zip {
         width: 50%;
     }
 

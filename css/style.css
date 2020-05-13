@@ -96,6 +96,13 @@ legend b {
     position: absolute;
     padding-bottom: 15px;
     margin-top: 0;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.third {
+    font-size: medium;
+    padding-top: 15px;
 }
 
 fieldset {
@@ -150,6 +157,16 @@ input[type="checkbox"] {
    width: 100%;
    padding-top: 20px;
    margin-top: 10px;
+}
+
+select {
+    width: 100%;
+    background-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 17px 15px;
+    border: none;
+    border-radius: 5px;
 }
 
 input {

@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 form {
     padding-left: 15px;
     padding-right: 15px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 header {
@@ -22,7 +24,7 @@ header {
 body {
     background: whitesmoke;
     display: block;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif;
 }
 
 :placeholder-shown {
@@ -81,7 +83,6 @@ legend {
 }
 
 legend b {
-    margin-top: 15px;
     margin-bottom: 15px;
     position: absolute;
     padding-top: 15px;
@@ -181,6 +182,7 @@ input {
 
 input:focus {
     background-color: lavender;
+    transition: all 1s ease-out;
   }
 
 input[name="user_zip"] {
